@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Brawl_Cards_login_screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-84-Hfi" userLabel="First Button">
+                                <rect key="frame" x="124" y="431.5" width="166" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign in with Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maH-Md-Fo2" userLabel="Second Button">
+                                <rect key="frame" x="133.5" y="474.5" width="147" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign in with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYN-iX-Qaa" userLabel="Third Button">
+                                <rect key="frame" x="140.5" y="517.5" width="133" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sign in with Email"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPH-Dn-MuT">
+                                <rect key="frame" x="72.5" y="394" width="269" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brawl  Cards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7T-Sq-wQR">
+                                <rect key="frame" x="150" y="264" width="114.5" height="100"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.95540553914369342" blue="0.0050961486263659816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mEp-84-Hfi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0ml-v7-PHv"/>
+                            <constraint firstItem="L7T-Sq-wQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72V-if-CvS"/>
+                            <constraint firstItem="TPH-Dn-MuT" firstAttribute="top" secondItem="L7T-Sq-wQR" secondAttribute="bottom" constant="30" id="Dvu-gD-wjs"/>
+                            <constraint firstItem="KYN-iX-Qaa" firstAttribute="top" secondItem="maH-Md-Fo2" secondAttribute="bottom" constant="10" id="Hrd-TM-gGS"/>
+                            <constraint firstItem="TPH-Dn-MuT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KfA-LV-cRp"/>
+                            <constraint firstItem="mEp-84-Hfi" firstAttribute="top" secondItem="TPH-Dn-MuT" secondAttribute="bottom" constant="10" id="RQF-cQ-a3q"/>
+                            <constraint firstItem="KYN-iX-Qaa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WXf-ZM-k0U"/>
+                            <constraint firstItem="mEp-84-Hfi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mKB-Sy-7lv"/>
+                            <constraint firstItem="maH-Md-Fo2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vmG-dw-Rdd"/>
+                            <constraint firstItem="maH-Md-Fo2" firstAttribute="top" secondItem="mEp-84-Hfi" secondAttribute="bottom" constant="10" id="zxl-07-N8P"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="121"/>
+        </scene>
+    </scenes>
+</document>
